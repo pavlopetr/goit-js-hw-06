@@ -22,8 +22,7 @@ const makeGalleryCard = ({ url, alt } = {}) => {
   return `<li class ="gal-img"><img src=${url} alt=${alt}></li>`;
 };
 
-const galleryMarkup = images
-  .map((el) => {
+const galleryMarkup = images.map((el) => {
     return makeGalleryCard(el);
   })
   .join("");
